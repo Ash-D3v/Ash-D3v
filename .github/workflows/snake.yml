@@ -17,7 +17,8 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: Ash-D3v
-          outputs: dist/snake.svg
+          outputs: |
+            dist/snake.svg?color_snake=bd93f9&color_dots=#282a36,#44475a,#6272a4,#50fa7b,#ff79c6
 
       - name: Push to output branch
         uses: peaceiris/actions-gh-pages@v4
